@@ -1,0 +1,29 @@
+{
+  "name": "dogfinder",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start-dev": "concurrently --kill-others \"npm run dev\" \"npm run start-be\"",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "start-be": "json-server --watch db.json --delay 500 --port 5001"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "concurrently": "^8.2.2",
+    "json-server": "^0.17.4",
+    "next": "14.0.1",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.1",
+    "typescript": "^5"
+  }
+}
